@@ -9,7 +9,7 @@ const convertToCelsius = function(fahreheitDegree) {
 
 const convertToFahrenheit = function(celsiusDegree) {
   //to get fahrenheit give celsius(celsius * (9/5)) +32
-  if(celsiusDegree*(9/5)===0){
+  if(celsiusDegree*(9/5)+32===0){
     return 0
   }else{
     return Number((celsiusDegree*(9/5)+32).toFixed(1))
