@@ -21,7 +21,7 @@ const power = function(baseInt, powerInt) {
 };
 //the factorial function is like the multiply function but we're given one argument and thus have to build an array of values from 1 up to and including that argument value and then multiply them together.
 const factorial = function(userInt) {
-	return Array.from({length: userInt}, (e,i)=>i+1).reduce((acc,ind)=>acc*ind)
+	return Array.from({length: userInt}, (e,i)=>e=i+1).reduce((acc,ind)=>acc*ind,1)
 };
 
 // Do not edit below this line
