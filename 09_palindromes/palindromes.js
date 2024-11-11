@@ -2,7 +2,7 @@
   //returns true if that string is the same as that string in reverse, without factoring word breaks and punctuation 
 //so we'll have to remove the word breaks and punctuation from the argument and then compare it to a reversed version, and we might as well convert its elements to lowercase.
 const palindromes = function (inputString) {
-    let reducedInput = Array.from(inputString.toLowerCase()).filter(e=>e.charCodeAt()>96&&e.charCodeAt()<123).join('')
+    let reducedInput = Array.from(inputString.toLowerCase()).filter(e=>e.charCodeAt()>96&&e.charCodeAt()<123||typeof e ==='number').join('')
     let reversedReducedInput = Array.from(reducedInput).reverse().join('')
     return reducedInput === reversedReducedInput
   };
