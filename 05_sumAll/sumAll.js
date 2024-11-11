@@ -1,7 +1,16 @@
 //create a function, that takes two integer arguments
 const sumAll = function(startingInt, endingInt) {
     //return the sum of every integer between and including those integer arguments
-    return Array.from({length: endingInt-startingInt+1}, (e,i)=>startingInt+i).reduce((acc,ele)=>acc+ele,0)
+    let lowerArg= null
+    let higherArg = null
+    if(startingInt<endingInt){
+      lowerArg=startingInt
+      higherArg=endingInt
+    }else{
+      lowerArg=endingInt
+      higherArg=startingInt
+    }
+    return Array.from({length:higherArg-lowerArg+1}, (e,i)=>lowerArg+i).reduce((acc,ele)=>acc+ele,0)
 };
 
 // Do not edit below this line
