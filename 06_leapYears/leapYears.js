@@ -9,8 +9,16 @@ const leapYears = function(userYear) {
     //   else (if only divisible by 4, and not by 100 or 400)
     //     return true
     // else if not divisible by 4
-        //return false 
-
+    //return false 
+    if(userYear%4===0){
+        if(userYear%100===0&&userYear%400===0){
+            return true
+        }else if(userYear%100===0){
+            return false
+        }else{
+            return true
+        }
+        }else{return false}
 };
 
 // Do not edit below this line
