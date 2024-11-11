@@ -1,7 +1,12 @@
 //create a function, that takes two integer arguments
 const sumAll = function(startingInt, endingInt) {
     //return the sum of every integer between and including those integer arguments
-    if(startingInt<0||endingInt<0){return 'ERROR'}
+    if(startingInt<0||endingInt<0){
+        return 'ERROR'
+    }
+    if(Math.floor(startingInt)!==startingInt||Math.floor(endingInt)!==endingInt){
+        return 'ERROR'
+    }
     let lowerArg= null
     let higherArg = null
     if(startingInt<endingInt){
