@@ -3,7 +3,7 @@ const convertToCelsius = function(fahreheitDegree) {
   if(fahreheitDegree===32){
     return 0
   }else{
-    return ((celsiusDegree-32)*(5/9)).toFixed(1)
+    return Number(((fahreheitDegree-32)*(5/9)).toFixed(1))
   }
 };
 
@@ -12,7 +12,7 @@ const convertToFahrenheit = function(celsiusDegree) {
   if(celsiusDegree*(9/5)===0){
     return 0
   }else{
-    return (fahreheitDegree*(9/5)+32).toFixed(1)
+    return Number((celsiusDegree*(9/5)+32).toFixed(1))
   }
 };
 
