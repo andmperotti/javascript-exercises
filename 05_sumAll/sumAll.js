@@ -7,6 +7,9 @@ const sumAll = function(startingInt, endingInt) {
     if(Math.floor(startingInt)!==startingInt||Math.floor(endingInt)!==endingInt){
         return 'ERROR'
     }
+    if(typeof startingInt !== 'number' || typeof endingInt !== 'number'){
+        return 'ERROR'
+    }
     let lowerArg= null
     let higherArg = null
     if(startingInt<endingInt){
