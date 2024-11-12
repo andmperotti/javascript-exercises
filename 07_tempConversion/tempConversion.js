@@ -1,9 +1,9 @@
-const convertToCelsius = function(fahreheitDegree) {
+const convertToCelsius = function(fahrenheitDegree) {
   //to get celsius given fahrenheit: (fahrenheit-32) * (5/9)
-  if(fahreheitDegree===32){
+  if(fahrenheitDegree===32){
     return 0
   }else{
-    return Number(((fahreheitDegree-32)*(5/9)).toFixed(1))
+    return Number(((fahrenheitDegree-32)*(5/9)).toFixed(1))
   }
 };
 
