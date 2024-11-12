@@ -7,11 +7,11 @@ const sumAll = function(startingInt, endingInt) {
         let lowerArg= null
         let higherArg = null
         if(startingInt<endingInt){
-        lowerArg=startingInt
-        higherArg=endingInt
+            lowerArg=startingInt
+            higherArg=endingInt
         }else{
-        lowerArg=endingInt
-        higherArg=startingInt
+            lowerArg=endingInt
+            higherArg=startingInt
         }
         return Array.from({length:higherArg-lowerArg+1}, (e,i)=>lowerArg+i).reduce((acc,ele)=>acc+ele,0)
     }else{
