@@ -4,9 +4,12 @@ const findTheOldest = function(people) {
     for(let i = 0; i<people.length; i++){
       let yearsLived = people[i].yearOfDeath-people[i].yearOfBirth
       if(yearsLived>currentOldestYears){
-        currentOldest = people[i].name
+        currentOldest = people[i]
         currentOldestYears = yearsLived
       }
     }
     return currentOldest
   };
+  
+  // Do not edit below this line
+  module.exports = findTheOldest;
