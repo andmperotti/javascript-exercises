@@ -1,5 +1,5 @@
 function palindromes(str){
-  let strArr = str.split('')
+  let strArr = str.toLowerCase().split('')
   let approvedElements = 'abcdefghijklmnopqrstuvwxyz'
   let filteredArr = strArr
     .filter(letter=>approvedElements
