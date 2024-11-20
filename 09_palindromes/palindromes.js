@@ -1,5 +1,6 @@
 function palindromes(str){
-  let reversedStr = str === str.split('').reverse().join('')
+  let strArr = str.split('')
+  let reversedStr = strArr.reverse().join('')
   return str === reversedStr
 }
 
