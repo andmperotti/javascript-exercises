@@ -1,6 +1,5 @@
-const getTheTitles = function(objArr) {
-    return Array.from(objArr, (e,ind)=>e.title)
-};
-
+function getTheTitles(bookArr){
+    return bookArr.map(book=>book.title)
+}
 // Do not edit below this line
 module.exports = getTheTitles;
